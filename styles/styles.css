@@ -11,6 +11,9 @@ body {
 
 h1 {
   color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Grid */
@@ -46,19 +49,24 @@ nav a:hover {
 /* Header */
 header {
   border-right: 1px #A11F3E solid;
-  display: flex;
   grid-column: 1 / 3;
   background-image: url("../images/diversity.jpg");
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
 }
 
 .university {
   border-left: 1px #A11F3E solid;
   border-right: 1px #A11F3E solid;
-  display: flex;
   grid-column: 3 / 4;
   background-image: url("../images/university.jpg");
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .welcome {
