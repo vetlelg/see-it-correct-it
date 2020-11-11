@@ -79,10 +79,11 @@ header {
 
 /* Footer */
 footer {
+  padding: 0 20px;
   grid-column: 1 / 5;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   width: 100%;
   background-color: #A11F3E;
