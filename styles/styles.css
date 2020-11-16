@@ -146,6 +146,11 @@ footer a {
 /* Responsive design */
 @media only screen and (max-width: 600px) {
 
+  /* General styles */
+  a {
+    font-size: 14px;
+  }
+
   /* Grid */
   .grid {
     height: 330vh;
