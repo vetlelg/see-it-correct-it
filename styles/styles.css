@@ -154,7 +154,7 @@ footer a {
   /* Grid */
   .grid {
     height: 330vh;
-    grid-template-rows: 2fr 8fr 8fr 13fr 2fr;
+    grid-template-rows: 1fr 9fr 8fr 14fr 1fr;
   }
   /* Navigation bar */
   .navigation {
