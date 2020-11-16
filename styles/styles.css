@@ -10,11 +10,12 @@ body {
 }
 
 h1 {
-  color: white;
+  color: black;
   font-size: 40px;
   text-align: center;
   padding: 10px;
-  background-color: rgba(161, 31, 62, 1);
+  background-color: white;
+  border: #A11F3E solid 2px;
   height: fit-content;
   width: fit-content;
 }
@@ -26,25 +27,33 @@ h2 {
 /* Grid */
 .grid {
   width: 100vw;
-  height: 100vh;
+  height: 240vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 9fr 13fr 1fr;
 }
 
 /* Navigation bar */
-nav {
-  grid-column: 1 / 5;
+.navigation {
+  grid-column: span 6;
   padding: 5px 20px;
   display: flex;
   width: 100%;
   background-color: white;
-  border-bottom: #A11F3E 2px solid;
+  border-bottom: 2px solid #A11F3E;
   align-items: center;
   justify-content: space-between;
 }
 
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
 nav a {
+  padding: 5px;
   text-decoration: none;
   color: black;
 }
@@ -55,8 +64,8 @@ nav a:hover {
 
 /* Header */
 .uat {
-  border-right: 1px #A11F3E solid;
-  grid-column: 1 / 3;
+  grid-column: span 6;
+  border-bottom: 2px #A11F3E solid;
   background-image: url("../images/diversity.jpg");
   background-size: cover;
 
@@ -66,9 +75,8 @@ nav a:hover {
 }
 
 .university {
-  border-left: 1px #A11F3E solid;
-  border-right: 1px #A11F3E solid;
-  grid-column: 3 / 4;
+  grid-column: span 3;
+  border-right: 2px #A11F3E solid;
   background-image: url("../images/university.jpg");
   background-size: cover;
 
@@ -78,8 +86,7 @@ nav a:hover {
 }
 
 .welcome {
-  border-left: #A11F3E 1px solid;
-  grid-column: 4 / 5;
+  grid-column: span 3;
   display: flex;
   background-image: url("../images/welcome.jpg");
   background-size: cover;
@@ -88,10 +95,11 @@ nav a:hover {
 /* Footer */
 footer {
   padding: 0 20px;
-  grid-column: 1 / 5;
+  grid-column: span 6;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   color: white;
   width: 100%;
   background-color: #A11F3E;
@@ -103,7 +111,7 @@ footer a {
 
 /* Sources */
 .sources {
-  grid-column: 1 / 5;
+  grid-column: span 6;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -114,4 +122,26 @@ footer a {
   height: fit-content;
   border: #A11F3E solid 2px;
   padding: 0 10px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+  .grid {
+    height: 280vh;
+    grid-template-rows: 2fr 8fr 8fr 8fr 2fr;
+  }
+
+  .uat,
+  .university,
+  .welcome,
+  .sources {
+    grid-column: span 6;
+  }
+
+  .university {
+    border-bottom: 2px #A11F3E solid;
+  }
+
+  .welcome {
+  }
 }
