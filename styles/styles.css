@@ -27,16 +27,16 @@ h2 {
 /* Grid */
 .grid {
   width: 100vw;
-  height: 240vh;
+  height: 260vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 9fr 13fr 1fr;
+  grid-template-rows: 1fr 9fr 15fr 1fr;
 }
 
 /* Navigation bar */
 .navigation {
   grid-column: span 6;
-  padding: 5px 20px;
+  padding: 5px 40px;
   display: flex;
   width: 100%;
   background-color: white;
@@ -47,18 +47,21 @@ h2 {
 
 nav {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  width: 90%;
+  width: fit-content;
+  justify-content: center;
 }
-
-nav a {
-  padding: 5px;
+.nav-row {
+  margin: 10px 0;
+}
+.nav-row a {
+  padding-left: 60px;
+  font-weight: bold;
   text-decoration: none;
   color: black;
 }
 
-nav a:hover {
+.nav-row a:hover {
   color: #A11F3E;
 }
 
@@ -132,8 +135,8 @@ footer a {
 /* Responsive design */
 @media only screen and (max-width: 600px) {
   .grid {
-    height: 280vh;
-    grid-template-rows: 2fr 8fr 8fr 8fr 2fr;
+    height: 330vh;
+    grid-template-rows: 2fr 8fr 8fr 13fr 2fr;
   }
 
   .uat,
@@ -146,7 +149,10 @@ footer a {
   .university {
     border-bottom: 2px #A11F3E solid;
   }
-
-  .welcome {
+  .nav-row a {
+    padding-left: 20px;
+  }
+  .nav-row {
+    margin: 5px 0;
   }
 }
