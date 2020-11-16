@@ -15,9 +15,10 @@ h1 {
   text-align: center;
   padding: 10px;
   background-color: white;
-  border: #A11F3E solid 2px;
+  border-top: #A11F3E solid 2px;
+  border-bottom: #A11F3E solid 2px;
   height: fit-content;
-  width: fit-content;
+  width: 100%;
 }
 
 h2 {
@@ -31,6 +32,14 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 9fr 15fr 1fr;
+}
+
+.grid-sources {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
 }
 
 /* Navigation bar */
@@ -130,6 +139,7 @@ footer a {
   height: fit-content;
   border: #A11F3E solid 2px;
   padding: 0 10px;
+  margin: 20px;
 }
 
 /* Responsive design */
