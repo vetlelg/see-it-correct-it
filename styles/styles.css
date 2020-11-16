@@ -177,6 +177,10 @@ footer a:hover {
     border-bottom: 2px #A11F3E solid;
   }
 
+  .welcome {
+    background-image: url("../images/welcome-mobile.jpg");
+  }
+
   
 
 }
