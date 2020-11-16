@@ -149,11 +149,23 @@ footer a:hover {
 
 /* Responsive design */
 @media only screen and (max-width: 600px) {
+  /* Grid */
   .grid {
     height: 330vh;
     grid-template-rows: 2fr 8fr 8fr 13fr 2fr;
   }
+  /* Navigation bar */
+  .navigation {
+    padding: 0px 0px;
+  }
+  .nav-row a {
+    padding-left: 20px;
+  }
+  .nav-row {
+    margin: 5px 0;
+  }
 
+  /* Main */
   .uat,
   .university,
   .welcome,
@@ -164,10 +176,7 @@ footer a:hover {
   .university {
     border-bottom: 2px #A11F3E solid;
   }
-  .nav-row a {
-    padding-left: 20px;
-  }
-  .nav-row {
-    margin: 5px 0;
-  }
+
+  
+
 }
