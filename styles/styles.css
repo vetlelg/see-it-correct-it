@@ -179,8 +179,12 @@ footer a {
   }
 
   /* Footer */
+  footer {
+    justify-content: space-around;
+    padding: 0;
+  }
   .footer-container {
-    padding: 5px 3px;
+    padding: 5px 0px;
   }
   footer a {
     padding: 0;
