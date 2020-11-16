@@ -47,7 +47,7 @@ h2 {
 
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 90%;
 }
@@ -98,7 +98,7 @@ footer {
   grid-column: span 6;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   color: white;
   width: 100%;
@@ -106,7 +106,12 @@ footer {
 }
 
 footer a {
+  padding: 5px;
   color: white;
+}
+
+.footer-container {
+  padding: 10px;
 }
 
 /* Sources */
