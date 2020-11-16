@@ -64,10 +64,11 @@ nav {
   margin: 10px 0;
 }
 .nav-row a {
-  padding-left: 40px;
+  margin-left: 40px;
   font-weight: bold;
   text-decoration: none;
   color: black;
+  border-bottom: 2px #A11F3E solid;
 }
 
 .nav-row a:hover {
@@ -155,7 +156,7 @@ footer a {
     padding: 0px 0px;
   }
   .nav-row a {
-    padding-left: 10px;
+    margin-left: 10px;
   }
   .nav-row {
     margin: 5px 0;
