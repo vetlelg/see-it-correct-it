@@ -120,11 +120,6 @@ footer {
 footer a {
   padding: 5px;
   color: white;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
 
 .footer-container {
@@ -184,7 +179,7 @@ footer a:hover {
 
   /* Footer */
   .footer-container {
-    padding: 5px 2px;
+    padding: 5px 3px;
   }
   footer a {
     padding: 0;
