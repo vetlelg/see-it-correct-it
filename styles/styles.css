@@ -186,14 +186,15 @@ footer a {
 
   .dropdown-container {
     display: flex;
+    border:none;
     flex-direction: column;
     background-color: #A11F3E;
+    width: 100%;
   }
 
   /* Hamburger button */
   .dropdown-hamburger {
     align-self: flex-end;
-    border: none;
     background-color: #6b1b2e;
     height: 60px;
     width: 60px;
@@ -227,12 +228,17 @@ footer a {
     border-bottom: 1px #c43556 solid;
   }
 
-  .dropdown-container:hover {
-    width: 100%;
-  }
-  .dropdown-container:hover .dropdown {
-    width: 100%;
+  .dropdown:target {
     display: flex;
+  }
+
+  #close-menu {
+    margin: auto;
+    width: fit-content;
+  }
+
+  #close-menu a {
+    font-weight: normal;
   }
 
   /* Main */
