@@ -168,7 +168,7 @@ footer a {
     grid-template-rows: 9fr 8fr 14fr 1fr;
   }
 
-  /* Navigation bar */
+  /* Mobile navigation bar */
   .mobile-navigation {
     position: fixed;
     display: flex;
