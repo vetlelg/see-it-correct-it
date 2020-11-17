@@ -184,6 +184,7 @@ footer a {
     background-color: #A11F3E;
   }
 
+  /* Hamburger button */
   .dropdown-hamburger {
     align-self: flex-end;
     border: none;
