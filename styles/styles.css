@@ -155,7 +155,7 @@ footer a {
 }
 
 /* Responsive design for mobile devices */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 
   /* Hide or show on mobile devices */
   .hide-on-mobile {
